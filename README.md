@@ -8,26 +8,26 @@ This repository serves as supplementary material for [the book](https://zero2pro
 
 ## Chapter snapshots
 
-The [`main`](https://github.com/LukeMathWalker/zero-to-production) branch shows the project at the end of the book.
+The [`main`](https://github.com/lee-hen/zero-to-production) branch shows the project at the end of the book.
 
 You can browse the project at the end of previous chapters by switching to their dedicated branches:
 
-- [Chapter 3, Part 0](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-03-part0)
-- [Chapter 3, Part 1](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-03-part1)
-- [Chapter 4](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-04)
-- [Chapter 5](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-05)
-- [Chapter 6, Part 0](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-06-part0)
-- [Chapter 6, Part 1](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-06-part1)
-- [Chapter 7, Part 0](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-07-part0)
-- [Chapter 7, Part 1](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-07-part1)
-- [Chapter 7, Part 2](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-07-part2)
-- [Chapter 8](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-08)
-- [Chapter 9](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-09)
-- [Chapter 10, Part 0](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-10-part0)
-- [Chapter 10, Part 1](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-10-part1)
-- [Chapter 10, Part 2](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-10-part2)
-- [Chapter 10, Part 3](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-10-part3)
-- [Chapter 11](https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-11)
+- [Chapter 3, Part 0](https://github.com/lee-hen/zero-to-production/tree/root-chapter-03-part0)
+- [Chapter 3, Part 1](https://github.com/lee-hen/zero-to-production/tree/root-chapter-03-part1)
+- [Chapter 4](https://github.com/lee-hen/zero-to-production/tree/root-chapter-04)
+- [Chapter 5](https://github.com/lee-hen/zero-to-production/tree/root-chapter-05)
+- [Chapter 6, Part 0](https://github.com/lee-hen/zero-to-production/tree/root-chapter-06-part0)
+- [Chapter 6, Part 1](https://github.com/lee-hen/zero-to-production/tree/root-chapter-06-part1)
+- [Chapter 7, Part 0](https://github.com/lee-hen/zero-to-production/tree/root-chapter-07-part0)
+- [Chapter 7, Part 1](https://github.com/lee-hen/zero-to-production/tree/root-chapter-07-part1)
+- [Chapter 7, Part 2](https://github.com/lee-hen/zero-to-production/tree/root-chapter-07-part2)
+- [Chapter 8](https://github.com/lee-hen/zero-to-production/tree/root-chapter-08)
+- [Chapter 9](https://github.com/lee-hen/zero-to-production/tree/root-chapter-09)
+- [Chapter 10, Part 0](https://github.com/lee-hen/zero-to-production/tree/root-chapter-10-part0)
+- [Chapter 10, Part 1](https://github.com/lee-hen/zero-to-production/tree/root-chapter-10-part1)
+- [Chapter 10, Part 2](https://github.com/lee-hen/zero-to-production/tree/root-chapter-10-part2)
+- [Chapter 10, Part 3](https://github.com/lee-hen/zero-to-production/tree/root-chapter-10-part3)
+- [Chapter 11](https://github.com/lee-hen/zero-to-production/tree/root-chapter-11)
 
 ## Pre-requisites
 
@@ -97,7 +97,7 @@ having launch the web server with `cargo run`.
 
 There is a default `admin` account with password
 `everythinghastostartsomewhere`. The available entrypoints are listed in
-[src/startup.rs](https://github.com/LukeMathWalker/zero-to-production/blob/6bd30650cb8670a146819a342ccefd3d73ed5085/src/startup.rs#L92)
+[src/startup.rs](https://github.com/lee-hen/zero-to-production/blob/6bd30650cb8670a146819a342ccefd3d73ed5085/src/startup.rs#L92)
 
 ## How to test
 
@@ -118,3 +118,18 @@ Launch `cargo`:
 ```bash
 cargo test 
 ```
+
+## cargo-watch
+
+```bash
+cargo install cargo-watch
+```
+
+```bash
+cargo watch -x check
+```
+
+```bash
+cargo watch -x check -x test -x run
+```
+
