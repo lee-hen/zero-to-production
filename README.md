@@ -36,36 +36,8 @@ You'll need to install:
 - [Rust](https://www.rust-lang.org/tools/install)
 - [Docker](https://docs.docker.com/get-docker/)
 
-There are also some OS-specific requirements.
-
-### Windows
-  
 ```bash
-cargo install -f cargo-binutils
-rustup component add llvm-tools-preview
-```
-
-```
-cargo install --version=0.6.0 sqlx-cli --no-default-features --features postgres
-```
-
-### Linux
-
-```bash
-# Ubuntu 
-sudo apt-get install lld clang libssl-dev postgresql-client
-# Arch 
-sudo pacman -S lld clang postgresql
-```
-
-```
-cargo install --version=0.6.0 sqlx-cli --no-default-features --features postgres
-```
-
-### MacOS
-
-```bash
-brew install michaeleisel/zld/zld
+brew install llvm
 ```
 
 ```
@@ -131,4 +103,40 @@ cargo watch -x check
 
 ```bash
 cargo watch -x check -x test -x run
+```
+
+## linter
+
+```bash
+rustup component add clippy
+```
+
+```bash
+cargo clippy
+```
+
+```bash
+cargo clippy -- -D warnings
+```
+
+## cargo-expand
+
+```bash
+cargo install cargo-expand
+```
+
+```bash
+cargo expand
+```
+
+```bash
+rustup toolchain install nightly --allow-downgrade
+```
+
+```bash
+cargo +nightly expand
+```
+
+```bash
+docker build --tag zero2prod --file Dockerfile .
 ```
